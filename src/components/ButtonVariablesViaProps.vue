@@ -18,6 +18,7 @@ const buttonStyle = computed(() => ({
 <style scoped>
 .button {
   padding: 1rem;
+  color: black;
   border: none;
   margin-bottom: 1rem;
   background-color: var(--bg-color);
