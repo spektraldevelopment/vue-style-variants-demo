@@ -8,21 +8,23 @@
 
 import { computed } from 'vue'
 
-const props = defineProps(['bgColor'])
+const props = defineProps<{
+  bgColor?: string;
+  color?: string;
+}>()
 
 const buttonStyle = computed(() => ({
   '--bg-color': props.bgColor || 'white',
+  '--color': props.color || 'black',
 }))
 </script>
 
 <style scoped>
 .button {
   padding: 1rem;
-  color: black;
+  color: var(--color);
   border: none;
   margin-bottom: 1rem;
   background-color: var(--bg-color);
 }
-
-
 </style>

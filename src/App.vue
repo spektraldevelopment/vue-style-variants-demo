@@ -12,13 +12,14 @@ import ButtonVariablesViaProps from "./components/ButtonVariablesViaProps.vue";
     <p>Using props to determine button styles with computed classes.</p>
     <ButtonPropsClass>Primary Variant</ButtonPropsClass>
     <ButtonPropsClass variant="secondary">Secondary Variant</ButtonPropsClass>
-    <ButtonPropsClass variant="danger">Danger Variant</ButtonPropsClass>
+    <ButtonPropsClass variant="error">Danger Variant</ButtonPropsClass>
   </div>
 
   <div class="variant-example">
     <h2>Dynamic Style</h2>
     <p>Using reactive state to change styles dynamically.</p>
     <ButtonDynamicStyle>Click to change background color</ButtonDynamicStyle>
+    <ButtonDynamicStyle bgColor="blue">Click to change background color</ButtonDynamicStyle>
   </div>
 
   <div class="variant-example">

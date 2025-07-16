@@ -9,7 +9,7 @@
 import { computed } from "vue";
 
 // Define allowed variants as a union type
-type Variant = 'primary' | 'secondary' | 'danger'
+type Variant = 'primary' | 'secondary' | 'error'
 
 // Strongly type props using `defineProps<T>()`
 const props = defineProps<{
@@ -37,7 +37,7 @@ const variantClass = computed(() => `button-${props.variant ?? 'primary'}`)
   color: black;
 }
 
-.button-danger {
+.button-error {
     background-color: red;
     color: white;
 }

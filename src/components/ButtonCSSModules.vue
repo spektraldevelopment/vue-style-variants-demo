@@ -1,5 +1,5 @@
 <template>
-  <button :class="[styles['base-button'], styles[variant]]">
+  <button :class="[styles['base-button'], styles[`button-${variant}`]]">
     <slot />
   </button>
 </template>

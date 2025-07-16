@@ -8,10 +8,15 @@
 
 import { ref } from 'vue';
 
-const dynamicColor = ref<string>('purple');
+const props = defineProps<{
+  bgColor?: string;
+}>();
+
+const dynamicColor = ref<string>(props.bgColor || 'purple');
 
 const onButtonClick = () => {
-    dynamicColor.value = dynamicColor.value === 'purple' ? 'orange' : 'purple';
+  // Toggle between two colors on each click
+  dynamicColor.value = dynamicColor.value !== 'orange' ? 'orange' : props.bgColor || 'purple';
 }
 
 </script>
