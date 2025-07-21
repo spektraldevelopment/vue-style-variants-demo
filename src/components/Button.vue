@@ -28,6 +28,7 @@ const variantClass = props.variant ?? 'primary'
 
 <style module>
 .base {
+  border: none;
   padding: var(--size-2) var(--size-2);
   border-radius: 6px;
   font-family: var(--text-fonts-sans);
