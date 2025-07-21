@@ -8,7 +8,6 @@ import Button from './components/Button.vue';
   <Button>Primary Style</Button>
 
   <Button variant="secondary">Secondary Style</Button>
-</template>
 
-<style scoped>
-</style>
+  <Button variant="custom">Click to change BG color</Button>
+</template>

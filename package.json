@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "style-dictionary": "node style-dictionary/build-tokens.js --verbose"
   },
   "dependencies": {
     "vue": "^3.5.17"
@@ -15,6 +16,7 @@
     "@types/vue": "^1.0.31",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
+    "style-dictionary": "^5.0.1",
     "typescript": "~5.8.3",
     "vite": "^7.0.4",
     "vue-tsc": "^2.2.12"
